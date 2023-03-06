@@ -1,0 +1,611 @@
+* {
+    box-sizing: border-box;
+}
+
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+/* الرأس */
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0px 30px;
+    background-color: #d1d1d1d2;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+
+}
+
+@media(max-width:767px) {
+    .head {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+}
+
+.head img {
+    width: 170px;
+}
+
+.head ul {
+    display: flex;
+}
+
+.head ul li {
+    padding: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+@media(max-width:767px) {
+    .head ul li {
+        padding: 10px 5px;
+    }
+}
+
+.head ul li:hover {
+    background-color: #9c9c9c;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+
+.head ul li a {
+
+    font-weight: 700;
+    color: black;
+}
+
+@media(max-width:991px) {
+    .head ul li a {
+        font-size: 16px;
+    }
+}
+
+@media(min-width:992px) {
+    .head ul li a {
+        font-size: 20px;
+    }
+}
+
+@media(max-width:767px) {
+    .head ul li a {
+        font-size: 14px;
+    }
+}
+
+/* كلمة العميد */
+.dean {
+    margin-top: 85px;
+    padding: 30px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    background-color: #0a81d1;
+}
+
+@media(max-width:991px) {
+    .dean {
+        flex-direction: column;
+    }
+}
+
+@media(max-width:767px) {
+    .dean {
+        margin-top: 142px;
+    }
+}
+
+.dean img {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.dean .text {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.315);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.dean .text h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+}
+
+.dean .text p {
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 500;
+    margin: 0;
+}
+
+/* رسالة الكلية */
+.message {
+    background-color: #071656;
+    padding: 100px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+@media(max-width:991px) {
+    .message {
+        flex-direction: column;
+    }
+}
+
+.message video {
+    width: 500px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+@media(max-width:767px) {
+    .message video {
+        width: 300px;
+    }
+}
+
+.message .text {
+    background-color: rgba(255, 255, 255, 0.315);
+    padding: 15px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.message .text h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+    font-weight: 900;
+}
+
+
+.message .text h3 {
+    margin: 0 0 10px;
+    font-size: 26px;
+}
+
+.message .text p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+/* الأشخاص */
+.people {
+    padding: 30px 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.people .box {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.people .box img {
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+.people .box span:first-of-type {
+    margin-bottom: 10px;
+    font-size: 50px;
+    font-weight: 700;
+
+}
+
+.people .box span:last-of-type {
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+/* فوتر */
+.foot {
+    display: flex;
+    padding: 50px 5px;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 30px;
+    background-color: #071656;
+    text-transform: capitalize;
+
+}
+
+.foot .logo {}
+
+.foot .logo img {
+    width: 150px;
+}
+
+.foot .address-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.foot .address-links .address {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.foot .address-links .address span {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: white;
+}
+
+.foot .address-links .social {
+    text-align: center;
+}
+
+.foot .address-links .social h3 {
+    color: white;
+    font-weight: normal;
+
+}
+
+
+
+.foot .address-links .social .links a img {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+@media(max-width:767px) {
+    .foot .important-links {
+        text-align: center;
+    }
+
+}
+
+.foot .important-links h3 {
+    font-size: 24px;
+    color: white;
+    margin: 0 0 20px;
+}
+
+.foot .important-links ul {}
+
+.foot .important-links ul li {
+    margin-bottom: 10px;
+}
+
+.foot .important-links ul li a {
+    color: white;
+    font-size: 18px;
+}
+
+/* تكلم عننا */
+.about {
+    margin-top: 85px;
+    padding: 20px 50px;
+}
+
+@media(max-width:767px) {
+    .about {
+        margin-top: 142px;
+    }
+}
+
+.about .text {
+    background-color: #ffffffba;
+    padding: 20px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+
+.about h1,
+.about h2,
+.about h3 {
+    text-transform: capitalize;
+}
+
+.about h1 {
+    border-bottom: 1px solid black;
+    padding: 20px;
+}
+
+.about h2 {
+    font-size: 24px;
+}
+
+.about h3 {
+    text-decoration: underline;
+    font-size: 22px;
+}
+
+.about p {
+    line-height: 1.5;
+    font-weight: 500;
+    color: black;
+    font-size: 20px;
+}
+
+/* تواصل معنا */
+.contact-us {
+    padding: 0 30px 50px;
+    width: 100%;
+    text-align: right;
+}
+
+.contact-us a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #eee;
+    color: #0a81d1;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.contact-us a:hover {
+    background-color: #0a81d1;
+    color: black;
+}
+
+/* الخلفية */
+.background {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+/* الأقسام العلمية */
+
+.departments {
+    margin-top: 85px;
+    padding: 20px 50px;
+
+}
+
+@media(max-width:767px) {
+    .departments {
+        margin-top: 142px;
+    }
+}
+
+.departments h1,
+.departments h2,
+.departments h3 {
+    text-transform: capitalize;
+}
+
+.departments h1 {
+    border-bottom: 1px solid black;
+    padding: 20px 0;
+    font-size: 33px;
+}
+
+.departments h2 {
+    font-size: 26px;
+
+}
+
+.departments h3 {
+    text-decoration: underline;
+    line-height: 1.6;
+    font-size: 22px;
+
+}
+
+.departments ul {}
+
+.departments ul li {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    list-style: inside;
+    line-height: 1.5;
+}
+
+/* البرامج الأكاديمية */
+.academic {
+    margin-top: 85px;
+    padding: 0 20px 50px;
+    text-transform: capitalize;
+}
+
+@media(max-width:767px) {
+    .academic {
+        margin-top: 142px;
+    }
+}
+
+
+
+.academic h1 {
+    border-bottom: 1px solid black;
+    padding: 20px 0;
+    font-size: 33px;
+}
+
+.academic h2 {
+    font-size: 26px;
+
+}
+
+.academic h3 {
+    text-decoration: underline;
+    line-height: 1.6;
+    font-size: 22px;
+
+}
+
+
+
+.academic p {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.academic p a {
+    font-size: 20px;
+    color: black;
+    font-weight: 900;
+    text-decoration: underline;
+}
+
+
+.academic table {
+    border: 2px solid black;
+    width: 100%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.academic table tbody {}
+
+
+.academic table tbody tr {
+    border-bottom: 2px solid black;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.academic table tbody tr:last-child {
+    border: none;
+}
+
+.academic table tbody .color {
+    background-color: rgba(0, 26, 255, 0.315);
+}
+
+
+
+.academic table tbody tr td {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/* الترم */
+.semester {
+    padding: 20px;
+    text-transform: capitalize;
+}
+
+.semester table {
+    border: 1px solid black;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    width: 100%;
+
+}
+
+.semester table thead {
+    text-align: center;
+    background-color: rgba(0, 26, 255, 0.315);
+
+}
+
+.semester table thead tr {}
+
+.semester table thead tr td {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 900;
+
+
+}
+
+.semester table tbody {}
+
+.semester table tbody tr {}
+
+.semester table tbody tr:first-child {
+    background-color: rgb(255, 73, 73);
+    font-size: 22px;
+    font-weight: 900;
+    text-align: center;
+}
+
+
+.semester table tbody tr td {
+    padding: 10px;
+    font-weight: 700;
+    border: 1px solid black;
+
+}
+
+.semester table tbody tr td:first-child,
+.semester table tbody tr td:nth-child(3) {
+    text-align: center;
+}
